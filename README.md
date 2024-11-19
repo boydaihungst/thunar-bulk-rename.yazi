@@ -45,5 +45,7 @@ but if you didn't select any file it will open normal rename command.
 [manager]
   keymap = [
     { on = "r", run = ["escape --visual", "plugin --sync thunar-bulk-rename"], desc = "Rename selected file(s) (via thunar)" },
+  # if you use yazi >= v0.4
+  #{ on = "r", run = ["escape --visual", "plugin thunar-bulk-rename"], desc = "Rename selected file(s) (via thunar)" },
   ]
 ```

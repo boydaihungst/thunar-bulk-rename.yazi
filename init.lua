@@ -1,3 +1,4 @@
+--- @sync entry
 return {
 	entry = function()
 		local selected_items = cx.active.selected
