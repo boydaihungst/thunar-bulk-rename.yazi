@@ -32,7 +32,7 @@ git clone https://github.com/boydaihungst/thunar-bulk-rename.yazi ~/.config/yazi
 or
 
 ```sh
-ya pack -a boydaihungst/thunar-bulk-rename.yazi
+ya pack -a boydaihungst/thunar-bulk-rename
 ```
 
 ## Usage
