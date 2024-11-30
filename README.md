@@ -14,7 +14,7 @@ thunar needs list of file paths, but yazi only return path to a temporary file
 (`bulk-1729616414909095`) if we use `bulk-rename` openner.
 It will show this in thunar. Not really what we want.
 
-![thunar-bulk-rename-yazi](assets/2024-10-23-00-32-12.png)
+![thunar-bulk-rename-yazi](statics/2024-10-23-00-32-12.png)
 
 ## Requirements
 
