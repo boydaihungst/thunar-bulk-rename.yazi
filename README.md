@@ -18,7 +18,7 @@ It will show this in thunar. Not really what we want.
 
 ## Requirements
 
-- [yazi](https://github.com/sxyazi/yazi)
+- [yazi >= v25.2.7](https://github.com/sxyazi/yazi)
 - [Thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
 
 ## Installation
