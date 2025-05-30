@@ -18,7 +18,7 @@ It will show this in thunar. Not really what we want.
 
 ## Requirements
 
-- [yazi >= v25.4.8](https://github.com/sxyazi/yazi)
+- [yazi >= v25.5.28](https://github.com/sxyazi/yazi)
 - [Thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
 
 ## Installation
@@ -32,6 +32,8 @@ git clone https://github.com/boydaihungst/thunar-bulk-rename.yazi ~/.config/yazi
 or
 
 ```sh
+ya pgk add boydaihungst/thunar-bulk-rename
+# or
 ya pack -a boydaihungst/thunar-bulk-rename
 ```
 
@@ -42,7 +44,7 @@ Press `r` to rename, if you select or visual select any file it will open thunar
 but if you didn't select any file it will open normal rename command.
 
 ```toml
-[manager]
+[mgr]
   prepend_keymap = [
     { on = "r", run = ["escape --visual", "plugin thunar-bulk-rename"], desc = "Rename selected file(s) (via thunar)" },
   ]

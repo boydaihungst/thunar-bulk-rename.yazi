@@ -1,5 +1,5 @@
 --- @sync entry
---- @since 25.4.8
+--- @since 25.5.28
 
 return {
 	entry = function()
@@ -9,9 +9,9 @@ return {
 			for _, v in pairs(selected_items) do
 				selected_urls = selected_urls .. ya.quote(tostring(v))
 			end
-			ya.mgr_emit("shell", { 'thunar -B "$@"', block = true, confirm = true })
+			ya.emit("shell", { 'thunar -B "$@"', block = true, confirm = true })
 		else
-			ya.mgr_emit("rename", { hovered = false, cursor = "before_ext" })
+			ya.emit("rename", { hovered = false, cursor = "before_ext" })
 		end
 	end,
 }
