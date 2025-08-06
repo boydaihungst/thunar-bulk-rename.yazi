@@ -18,7 +18,7 @@ It will show this in thunar. Not really what we want.
 
 ## Requirements
 
-- [yazi >= v25.5.28](https://github.com/sxyazi/yazi)
+- [yazi >= v25.5.31](https://github.com/sxyazi/yazi)
 - [Thunar](https://archlinux.org/packages/extra/x86_64/thunar/)
 
 ## Installation
@@ -33,8 +33,6 @@ or
 
 ```sh
 ya pgk add boydaihungst/thunar-bulk-rename
-# or
-ya pack -a boydaihungst/thunar-bulk-rename
 ```
 
 ## Usage
