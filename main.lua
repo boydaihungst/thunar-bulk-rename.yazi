@@ -8,7 +8,7 @@ return {
 		if #selected_items >= 1 then
 			for _, f in pairs(selected_items) do
 				local u = f.url or f
-				local is_virtual = (u.spec and u.spec.is_virtual) or (u.scheme and u.scheme.is_virtual)
+				local is_virtual = (u.spec and u.spec.is_virtual) or (not u.spec and u.scheme.is_virtual)
 				if is_virtual then
 					ya.dbg("thunar-bulk-rename", "Thunar rename doesn't support virtual file system")
 					ya.emit("rename", { hovered = false, cursor = "before_ext" })
