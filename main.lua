@@ -6,7 +6,6 @@ return {
 		ya.emit("escape", { visual = true })
 		local selected_items = cx.active.selected
 		if #selected_items >= 1 then
-			local selected_urls = ""
 			for _, f in pairs(selected_items) do
 				local u = f.url or f
 				local is_virtual = (u.spec and u.spec.is_virtual) or (u.scheme and u.scheme.is_virtual)
@@ -15,7 +14,6 @@ return {
 					ya.emit("rename", { hovered = false, cursor = "before_ext" })
 					return
 				end
-				selected_urls = selected_urls .. ya.quote(tostring(v))
 			end
 			ya.emit("shell", { "thunar -B %s", block = true, confirm = true })
 		else
